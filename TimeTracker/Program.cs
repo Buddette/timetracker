@@ -43,6 +43,7 @@ static void ShowConsole() //basically makes new function, don't question it
 //figure out what to do
 //maybe ui
 //maybe more features
+//test github
 
 AllocConsole();
 
