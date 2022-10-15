@@ -57,7 +57,7 @@ namespace TimeTracker
             //maybe more features
             //test github - done
 
-            AllocConsole();
+            //AllocConsole();
 
             if (Process.GetProcessesByName("TimeTracker").Length > 2)
             {
@@ -94,7 +94,7 @@ namespace TimeTracker
             //ProcessStartInfo startinfo = new ProcessStartInfo("ServiceHub.TestWindowStoreHost.exe");
             if (Process.GetProcessesByName(program).Any())
             {
-                FreeConsole();
+                //FreeConsole();
 
                 // waits for first one to close
                 //Process process = Process.GetProcessesByName("notepad")[0];
@@ -109,7 +109,7 @@ namespace TimeTracker
                     process.WaitForExit();
                 }
 
-                ShowConsole();
+                //ShowConsole();
 
                 Console.WriteLine("The application has exited.");
             }
