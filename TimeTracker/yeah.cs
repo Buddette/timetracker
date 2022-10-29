@@ -29,6 +29,7 @@ namespace TimeTracker
             // this will be called when it gets pressed
             //Program.OldProgram(); OLD BROKEY DONT USE
             label3.Text = "status: running";
+
         }
 
         public void UnTrackingButtonGotPressedOrSomething()
