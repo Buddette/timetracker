@@ -37,6 +37,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -77,12 +82,11 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.ImageLocation = "https://cdn.discordapp.com/attachments/537146611692994570/1030740092890918922/ee." +
     "png";
-            this.pictureBox1.Location = new System.Drawing.Point(321, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(656, 195);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(479, 530);
+            this.pictureBox1.Size = new System.Drawing.Size(143, 149);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
@@ -133,11 +137,61 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "status: not running";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(656, 38);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(75, 15);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "current time:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(488, 402);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(134, 15);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Change target program:";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(624, 399);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(164, 23);
+            this.textBox2.TabIndex = 9;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(510, 378);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(260, 15);
+            this.label6.TabIndex = 10;
+            this.label6.Text = "WARNING: THIS WILL RESET ALL TRACKED TIME";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(544, 428);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(197, 23);
+            this.button4.TabIndex = 11;
+            this.button4.Text = "Confirm";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
             // yeah
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 530);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.label2);
@@ -145,6 +199,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "yeah";
             this.Text = "yeah";
             this.panel1.ResumeLayout(false);
@@ -166,5 +221,10 @@
         private Label label2;
         private Button button3;
         private Label label3;
+        private Label label4;
+        private Label label5;
+        private TextBox textBox2;
+        private Label label6;
+        private Button button4;
     }
 }
